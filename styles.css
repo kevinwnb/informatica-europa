@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial;
+}
+
+@font-face {
+      font-family: "robo";
+      src: url("assets/fonts/robo.ttf");
+}
+
+@font-face {
+    font-family: adequate;
+    src: url("assets/fonts/adequate.ttf");
+}
+
+html,
+body {
+    background-color: #272830;
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding: 15px 0 !important;
+    z-index: 100;
+    background-color: #1b1c22 !important;
+}
+
+.navbar .menu-logo {
+    width: 30px;
+    height: 30px;
+}
+
+#backTopBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #0275d8;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 2rem;
+    /* Increase font size */
+}
+
+.modal .msg h1 {
+    color: darkgreen;
+}
+
+#proyectos > div {
+    background-color: white;
+}
+
+section {
+    background-color: white;
+}
+
+section h2 {
+    border: 2px solid #4d4d4d;
+    color: #4d4d4d;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 50px 0;
+    padding: 15px;
+}
+
+section#proyectos #lista-proyectos h4 {
+    border-bottom: 1px solid black;
+}
+
+section#proyectos i {
+    font-size: 3rem;
+}
+
+section#proyectos img, section#proyectos video {
+    border-radius: 15px;
+}
+
+section#habilidades .habilidad {
+    border-left: 3px solid black;
+    margin-top: 50px;
+}
+
+
+
+section#contacto {
+
+}
+
+footer .row {
+    padding: 100px 0;
+}
+
+footer a:not(.disabled) i {
+    font-size: 5rem;
+    color: gray;
+    transition: color 0.25s;
+}
+
+footer a:not(.disabled) i:hover {
+    color: #ffc107;
+}
+
+footer a.disabled {
+    cursor: default;
+}
+
+footer a.disabled i {
+    color: #4d4d4d;
+    font-size: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  footer a:not(.disabled) i, footer a.disabled i {
+      font-size: 3rem;
+  }
+}
+
+
+
+.tooltip-inner {
+    background-color: #ffc107;
+    box-shadow: 0px 0px 4px black;
+    opacity: 1 !important;
+    color: black;
+}
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: #ffc107 !important;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: #ffc107 !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #ffc107 !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #ffc107 !important;
+}
+
+
+
+.contactMeButton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: firebrick;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: normal;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.contactMeButton:hover {
+    color: white;
+}
+
+.contactMeButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.contactMeButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.contactMeButton:hover span {
+    padding-right: 25px;
+}
+
+.contactMeButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+}
+
+.title {
+    font-size: 1.75rem;
+    font-family: adequate, Arial;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    letter-spacing: 0.4rem;
+    font-family: robo;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+}
