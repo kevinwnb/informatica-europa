@@ -31,6 +31,30 @@ body {
     height: 30px;
 }
 
+section#inicio .bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image: url("assets/images/bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+section#inicio .bg > div {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#inicio .bg h2 {
+    color: white;
+    letter-spacing: 0.5rem;
+    border: 0px !important;
+}
+
 #backTopBtn {
     display: none;
     /* Hidden by default */
@@ -201,15 +225,10 @@ footer a.disabled i {
 
 
 
-@media only screen and (max-width: 991px) {
-    [data-aos-delay] {
-        transition-delay: 0s !important;
-    }
-}
 
 .title {
     font-size: 1.75rem;
-    font-family: adequate, Arial;
+    font-family: robo;
     font-weight: bold;
 }
 
