@@ -187,61 +187,72 @@
         <div class="container">
             <div class="text-center">
                 <h2>Servicios</h2>
-            </div>
-            <div class="habilidad row align-items-center">
-                <div class="col-md-5">
-                    <img class="position-relative w-100" src="assets/images/team.png" alt="Desarrollo Web">
+                <div class="menu">
+                    <a data-type="software" class="active" href="javascript:void(0)">Software</a>
+                    <a data-type="reparaciones" href="javascript:void(0)">Reparaciones</a>
+                    <a href="javascript:void(0)">Consultas</a>
                 </div>
-                <div class="col-md-7">
-                    <div>
-                        <h4>
-                            Diseño y Desarrollo Web
-                        </h4>
-                        <p>
-                            Desarrollo de aplicaciones web
-                        </p>
-                        <!-- Button trigger modal -->
-                        <button onclick="setEndorsmentType(event)" id="1" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal"> Contacto
-                        </button>
+            </div>
+            <div class="content software">
+                <div class="habilidad row align-items-center">
+                    <div class="col-md-5">
+                        <img class="position-relative w-100" src="assets/images/team.png" alt="Desarrollo Web">
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>
+                                Diseño y Desarrollo Web
+                            </h4>
+                            <p>
+                                Desarrollo de aplicaciones web
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button onclick="setEndorsmentType(event)" id="1" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal"> Contacto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad row align-items-center">
+                    <div class="col-md-5">
+                        <img class="position-relative w-100" src="assets/images/reparacion.jpg" alt="Traducciones">
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>
+                                Reparación y configuración de sistemas
+                            </h4>
+                            <p>
+                                Reparación y configuración de sistemas para startups y empresas
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button onclick="setEndorsmentType(event)" id="2" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal">
+                                <i class="fa-solid fa-thumbs-up"></i> Endorsar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad row align-items-center">
+                    <div class="col-md-5">
+                        <img class="position-relative w-100" src="assets/images/consulting.webp" alt="Mentoría">
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>
+                                Consultoría
+                            </h4>
+                            <p>
+                                Agenda una llamada o reunión para resolver cualquier duda
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button onclick="setEndorsmentType(event)" id="3" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal">
+                                <i class="fa-solid fa-thumbs-up"></i> Endorsar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="habilidad row align-items-center">
-                <div class="col-md-5">
-                    <img class="position-relative w-100" src="assets/images/reparacion.jpg" alt="Traducciones">
-                </div>
-                <div class="col-md-7">
-                    <div>
-                        <h4>
-                            Reparación y configuración de sistemas
-                        </h4>
-                        <p>
-                            Reparación y configuración de sistemas para startups y empresas
-                        </p>
-                        <!-- Button trigger modal -->
-                        <button onclick="setEndorsmentType(event)" id="2" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal">
-                            <i class="fa-solid fa-thumbs-up"></i> Endorsar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="habilidad row align-items-center">
-                <div class="col-md-5">
-                    <img class="position-relative w-100" src="assets/images/consulting.webp" alt="Mentoría">
-                </div>
-                <div class="col-md-7">
-                    <div>
-                        <h4>
-                            Consultoría
-                        </h4>
-                        <p>
-                            Agenda una llamada o reunión para resolver cualquier duda
-                        </p>
-                        <!-- Button trigger modal -->
-                        <button onclick="setEndorsmentType(event)" id="3" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal">
-                            <i class="fa-solid fa-thumbs-up"></i> Endorsar
-                        </button>
-                    </div>
+                <div class="content reparaciones">
+                    <p>reparaciones</p>
                 </div>
             </div>
         </div>

@@ -71,6 +71,22 @@ section#inicio .bg h4 {
     color: lightgray;
 }
 
+section#servicios > div {
+    background-color: #01588d;
+}
+
+section#servicios .menu a {
+    color: white;
+    padding: 15px;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+section#servicios .menu a.active {
+    color: black;
+    background-color: white;
+}
+
 #backTopBtn {
     display: none;
     /* Hidden by default */

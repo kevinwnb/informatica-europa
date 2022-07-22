@@ -152,3 +152,14 @@ function scrollFunction() {
     document.querySelector(".navbar").classList.remove("navbar-scrolled");
   }
 }
+
+document.querySelectorAll(".menu a").forEach((item) => {
+    item.addEventListener("click", (event) => {
+        document.querySelector(".menu .active").classList.remove("active");
+        event.target.classList.add("active");
+        document.querySelectorAll(".content").forEach((item2) => {
+            item2.classList.add("d-none");
+        });
+        document.querySelector("." + event.target.dataset.type).classList.remove("d-none");
+    })
+});
