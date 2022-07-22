@@ -23,6 +23,15 @@ body {
 .navbar {
     padding: 15px 0 !important;
     z-index: 100;
+    background-color: rgba(255,255,255,0.2) !important;
+    margin: 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.navbar-scrolled {
+    margin: 0;
+    border-radius: 0px;
     background-color: #1b1c22 !important;
 }
 
@@ -46,13 +55,20 @@ section#inicio .bg {
 section#inicio .bg > div {
     text-align: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px 0;
 }
 
 section#inicio .bg h2 {
     color: white;
     letter-spacing: 0.5rem;
     border: 0px !important;
+    margin: 0;
+    padding: 0;
+}
+
+section#inicio .bg h4 {
+    color: lightgray;
 }
 
 #backTopBtn {

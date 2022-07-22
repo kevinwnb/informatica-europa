@@ -33,10 +33,6 @@ $buildProjectCard = (img1Path, title, id) => {
 
 
 
-particlesJS.load('particles-js', 'particles-js/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-});
-
 function arrowAnimation() {
     $("a.scroll-down-arrow").animate({
         'top': '-=10px',
@@ -51,16 +47,6 @@ function arrowAnimation() {
     });
 }
 arrowAnimation();
-
-document.querySelector("#btnScrollToAboutMe").addEventListener("click", function() {
-    //1 second of animation time
-    //html works for FFX but not Chrome
-    //body works for Chrome but not FFX
-    //This strange selector seems to work universally
-    $("html").animate({
-        scrollTop: $("section#proyectos").offset().top - 70
-    }, 0);
-});
 
 //scroll to section via click
 document.querySelector("#link-inicio").addEventListener("click", function() {
@@ -83,39 +69,19 @@ document.querySelector("#link-proyectos").addEventListener("click", function() {
     }, 0);
 });
 
-// document.querySelector("#link-idiomas").addEventListener("click", function() {
-//     //1 second of animation time
-//     //html works for FFX but not Chrome
-//     //body works for Chrome but not FFX
-//     //This strange selector seems to work universally
-//     $("html").animate({
-//         scrollTop: $("section#idiomas").offset().top - 70
-//     }, 0);
-// });
-
-document.querySelector("#link-habilidades").addEventListener("click", function() {
+document.querySelector("#link-servicios").addEventListener("click", function() {
     //1 second of animation time
     //html works for FFX but not Chrome
     //body works for Chrome but not FFX
     //This strange selector seems to work universally
     $("html").animate({
-        scrollTop: $("section#habilidades").offset().top - 70
+        scrollTop: $("section#servicios").offset().top - 70
     }, 0);
-});
-
-$("#btnScrollToContactMe").click(function() {
-    //1 second of animation time
-    //html works for FFX but not Chrome
-    //body works for Chrome but not FFX
-    //This strange selector seems to work universally
-    $("html, body").animate({
-        scrollTop: $("section#contactMe").offset().top
-    }, 500);
 });
 
 
 //change active link via scroll
-window.onscroll = () => {
+window.addEventListener("scroll", () => {
     var current = "";
 
     document.querySelectorAll("section").forEach((section) => {
@@ -131,7 +97,7 @@ window.onscroll = () => {
             a.classList.add("active");
         }
     });
-};
+})
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -173,4 +139,16 @@ function endorsar(e){
             })
         }, 2000);
     })
+}
+
+
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.addEventListener("scroll", function() {scrollFunction()});
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+      document.querySelector(".navbar").classList.add("navbar-scrolled");
+  } else {
+    document.querySelector(".navbar").classList.remove("navbar-scrolled");
+  }
 }
