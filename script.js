@@ -48,36 +48,15 @@ function arrowAnimation() {
 }
 arrowAnimation();
 
-//scroll to section via click
-document.querySelector("#link-inicio").addEventListener("click", function() {
-    //1 second of animation time
-    //html works for FFX but not Chrome
-    //body works for Chrome but not FFX
-    //This strange selector seems to work universally
-    $("html").animate({
-        scrollTop: $("section#inicio").offset().top - 70
-    }, 0);
+//scroll to section when clicking on navbar link
+document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+    link.addEventListener("click", function(event){
+        $("html").animate({
+            scrollTop: $("section#" + event.target.id.substring(5)).offset().top - 70
+        }, 0);
+    });
 });
 
-document.querySelector("#link-proyectos").addEventListener("click", function() {
-    //1 second of animation time
-    //html works for FFX but not Chrome
-    //body works for Chrome but not FFX
-    //This strange selector seems to work universally
-    $("html").animate({
-        scrollTop: $("section#proyectos").offset().top - 70
-    }, 0);
-});
-
-document.querySelector("#link-servicios").addEventListener("click", function() {
-    //1 second of animation time
-    //html works for FFX but not Chrome
-    //body works for Chrome but not FFX
-    //This strange selector seems to work universally
-    $("html").animate({
-        scrollTop: $("section#servicios").offset().top - 70
-    }, 0);
-});
 
 
 //change active link via scroll

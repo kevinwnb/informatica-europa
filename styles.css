@@ -107,13 +107,11 @@ section#servicios .content {
 section#servicios .menu a {
     color: white;
     padding: 15px;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
     margin: 0 5px;
     text-decoration: none;
     position: relative;
     display: inline-block;
+    background-color: rgba(255,255,255,0.2);
 }
 
 section#servicios .menu a.active {
@@ -158,7 +156,7 @@ footer a:not(.disabled) i {
 }
 
 footer a:not(.disabled) i:hover {
-    color: #ffc107;
+    color: skyblue;
 }
 
 footer a.disabled {
@@ -179,22 +177,22 @@ footer a.disabled i {
 
 
 .tooltip-inner {
-    background-color: #ffc107;
+    background-color: skyblue;
     box-shadow: 0px 0px 4px black;
     opacity: 1 !important;
     color: black;
 }
 .tooltip.bs-tooltip-right .tooltip-arrow::before {
-    border-right-color: #ffc107 !important;
+    border-right-color: skyblue !important;
 }
 .tooltip.bs-tooltip-left .tooltip-arrow::before {
-    border-left-color: #ffc107 !important;
+    border-left-color: skyblue !important;
 }
 .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: skyblue !important;
 }
 .tooltip.bs-tooltip-top .tooltip-arrow::before {
-    border-top-color: #ffc107 !important;
+    border-top-color: skyblue !important;
 }
 
 
