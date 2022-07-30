@@ -102,6 +102,7 @@ section#servicios .menu {
 
 section#servicios .content {
     background-color: white;
+    border-radius: 10px;
 }
 
 section#servicios .menu a {
@@ -109,6 +110,8 @@ section#servicios .menu a {
     padding: 15px;
     margin: 0 5px;
     text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     position: relative;
     display: inline-block;
     background-color: rgba(255,255,255,0.2);

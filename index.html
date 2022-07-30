@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,16 +9,22 @@
     <!--devicons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js" charset="utf-8" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- The Modal -->
     <div class="modal fade" id="modal">
@@ -32,7 +39,8 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form onsubmit="endorsar(event)" class="formulario-endorsar" action="javascript:void(0)" method="post">
+                    <form onsubmit="endorsar(event)" class="formulario-endorsar" action="javascript:void(0)"
+                        method="post">
                         <input class="form-control" type="text" name="nombre" placeholder="Nombre">
                         <input class="form-control my-3" type="text" name="email" placeholder="Email (opcional)">
                         <input class="form-control" type="text" name="comentario" placeholder="Comentario (opcional)">
@@ -55,213 +63,251 @@
 
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><!-- Navbar brand -->
-                <img class="menu-logo" src="assets/images/favicon.png" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a id="link-inicio" class="nav-link inicio active" aria-current="page" href="javascript:void(0)">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="link-proyectos" class="nav-link proyectos" href="javascript:void(0)">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="link-servicios" class="nav-link servicios" href="javascript:void(0)" tabindex="-1">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="link-location" class="nav-link location" href="javascript:void(0)" tabindex="-1">Ubicación</a>
-                        </li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="#">
+                <!-- Navbar brand -->
+                <img class="menu-logo" src="assets/images/favicon.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a id="link-inicio" class="nav-link inicio active" aria-current="page"
+                            href="javascript:void(0)">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-proyectos" class="nav-link proyectos" href="javascript:void(0)">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-servicios" class="nav-link servicios" href="javascript:void(0)"
+                            tabindex="-1">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-location" class="nav-link location" href="javascript:void(0)"
+                            tabindex="-1">Ubicación</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
 
-        <section id="inicio">
-            <div class="bg">
-                <div>
-                    <h2 class="title">Informática Europa</h2>
-                    <h4>Desarrollo de Software - Reparación de equipos - Consultoría</h4>
-                </div>
-                <a id="btnScrollToAboutMe" href="javascript:void(0)" class="scroll-down-arrow" style="height: 5rem; border-radius: 7px; bottom: 50px; position: absolute; color: white; font-size: 5rem;"><i class="fas fa-angle-down"></i></a>
-            </div>
-        </section>
-
-
-
-        <section id="proyectos">
+    <section id="inicio">
+        <div class="bg">
             <div>
-                <div class="container">
-                    <div class="text-center">
-
-                        <h2 class="text-center">Proyectos</h2>
-                    </div>
-
-                    <div id="lista-proyectos">
-                        <h4>Blue Bank</h4>
-                        <div class="row align-items-center justify-content-center bg-light py-5 position-relative rounded">
-                            <div class="col-md-6 p-3">
-                                <img src="assets/images/blueBank.png" class="position-relative w-100" alt="">
-                            </div>
-                            <div class="col-md-6 p-3">
-                                <video class="position-relative w-100" src="assets/videos/blue_bank.mp4" controls>
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="col-md-6 text-center mt-3">
-                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                <i class="devicon-css3-plain-wordmark colored"></i>
-
-                                <i class="devicon-javascript-plain colored"></i>
-
-                                <i class="devicon-csharp-plain colored"></i>
-                                <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-
-                        <h4>Venture Real Estate</h4>
-                        <div class="row align-items-center justify-content-center bg-light py-5 position-relative">
-                            <div class="col-md-6 p-3">
-                                <img src="assets/images/ventureRealEstate.png" class="position-relative w-100" alt="">
-                            </div>
-                            <div class="col-md-6 p-3">
-                                <video class="position-relative w-100" src="assets/videos/venture_real_estate.mp4" controls>
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="col-md-6 text-center mt-3">
-                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                <i class="devicon-css3-plain-wordmark colored"></i>
-
-                                <i class="devicon-javascript-plain colored"></i>
-
-                                <i class="devicon-csharp-plain colored"></i>
-                                <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-
-                        <h4>Miranda's Shoes</h4>
-                        <div class="row align-items-center justify-content-center bg-light py-5 position-relative">
-                            <div class="col-md-6 p-3">
-                                <img src="assets/images/mirandasShoes.png" class="position-relative w-100" alt="">
-                            </div>
-                            <div class="col-md-6 p-3">
-                                <video class="position-relative w-100" src="assets/videos/mirandas_shoes.mp4" controls>
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="col-md-6 text-center mt-3">
-
-                                <i class="devicon-java-plain-wordmark colored"></i>
-
-                                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-
-                        <h4>ABC Automotive</h4>
-                        <div class="row align-items-center justify-content-center bg-light py-5 position-relative">
-                            <div class="col-md-6 p-3">
-                                <img src="assets/images/abcAutomotive.png" class="position-relative w-100" alt="">
-                            </div>
-                            <div class="col-md-6 p-3">
-                                <video class="position-relative w-100" src="assets/videos/abc_automotive.mp4" controls>
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="col-md-6 text-center mt-3">
-
-                                <i class="devicon-csharp-plain colored"></i>
-                                <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="title">Informática Europa</h2>
+                <h4>Desarrollo de Software - Reparación de equipos - Consultoría</h4>
             </div>
+            <a id="btnScrollToAboutMe" href="javascript:void(0)" class="scroll-down-arrow"
+                style="height: 5rem; border-radius: 7px; bottom: 50px; position: absolute; color: white; font-size: 5rem;"><i
+                    class="fas fa-angle-down"></i></a>
+        </div>
+    </section>
 
-        </section>
 
 
-
-
-        <section id="servicios">
+    <section id="proyectos">
+        <div>
             <div class="container">
                 <div class="text-center">
-                    <h2>Servicios</h2>
-                    <div class="menu">
-                        <a data-type="software" class="active" href="javascript:void(0)">Software</a
-                            ><a data-type="reparaciones" href="javascript:void(0)">Reparaciones</a
-                                ><a href="javascript:void(0)">Consultas</a>
-                            </div>
-                        </div>
-                        <div class="content software">
-                            <div class="servicio row align-items-center">
-                                <div class="col-md-4">
-                                    <img class="position-relative w-100" src="assets/images/hcjps.webp" alt="Desarrollo Web">
-                                </div>
-                                <div class="col-md-8">
-                                    <div>
-                                        <h4>
-                                            Diseño y Desarrollo Web
-                                        </h4>
 
-                                        <!-- Button trigger modal -->
-                                        <button onclick="setEndorsmentType(event)" id="1" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal"> Contacto
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="servicio row align-items-center">
-                                <div class="col-md-4">
-                                    <img class="position-relative w-100" src="assets/images/visual-studio.png" alt="Traducciones">
-                                </div>
-                                <div class="col-md-8">
-                                    <div>
-                                        <h4>
-                                            Desarrollo de aplicaciones windows
-                                        </h4>
+                    <h2 class="text-center">Proyectos</h2>
+                </div>
 
-                                        <!-- Button trigger modal -->
-                                        <button onclick="setEndorsmentType(event)" id="2" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal">
-                                            <i class="fa-solid fa-thumbs-up"></i> Endorsar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                <div id="lista-proyectos">
+                    <h4>Blue Bank</h4>
+                    <div class="row align-items-center justify-content-center bg-light py-5 position-relative rounded">
+                        <div class="col-md-6 p-3">
+                            <img src="assets/images/blueBank.png" class="position-relative w-100" alt="">
                         </div>
-                        <div class="content reparaciones">
-                            <p>reparaciones</p>
+                        <div class="col-md-6 p-3">
+                            <video class="position-relative w-100" src="assets/videos/blue_bank.mp4" controls>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-md-6 text-center mt-3">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+
+                            <i class="devicon-javascript-plain colored"></i>
+
+                            <i class="devicon-csharp-plain colored"></i>
+                            <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
                         </div>
                     </div>
-                </section>
 
-                <section id="location">
-                    <div class="text-center">
-                        <h2>Ubicación</h2>
-                    </div>
-                    <div class="mx-auto mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=calle%20mezquita%2024%20aguadulce&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">inserting google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
-                </section>
-
-                <footer>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
-                            <a href="javascript:void(0)" class="wa disabled"><i data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible via solicitud" class="fa-brands fa-whatsapp-square"></i></a>
+                    <h4>Venture Real Estate</h4>
+                    <div class="row align-items-center justify-content-center bg-light py-5 position-relative">
+                        <div class="col-md-6 p-3">
+                            <img src="assets/images/ventureRealEstate.png" class="position-relative w-100" alt="">
                         </div>
-                        <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
-
-                            <a href="https://www.linkedin.com/in/kevinwnb" target="_blank"><i class="in fa-brands fa-linkedin"></i></a>
+                        <div class="col-md-6 p-3">
+                            <video class="position-relative w-100" src="assets/videos/venture_real_estate.mp4" controls>
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
+                        <div class="col-md-6 text-center mt-3">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
 
-                            <a href="https://www.facebook.com/kevin.wegener.3154" target="_blank"><i class="fb fa-brands fa-facebook-square"></i></a>
-                        </div>
-                        <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
+                            <i class="devicon-javascript-plain colored"></i>
 
-                            <a href="https://github.com/kevinwnb" target="_blank"><i class="gh fa-brands fa-github"></i></a>
+                            <i class="devicon-csharp-plain colored"></i>
+                            <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
                         </div>
                     </div>
-                </footer>
-            </body>
-            </html>
+
+                    <h4>Miranda's Shoes</h4>
+                    <div class="row align-items-center justify-content-center bg-light py-5 position-relative">
+                        <div class="col-md-6 p-3">
+                            <img src="assets/images/mirandasShoes.png" class="position-relative w-100" alt="">
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <video class="position-relative w-100" src="assets/videos/mirandas_shoes.mp4" controls>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-md-6 text-center mt-3">
+
+                            <i class="devicon-java-plain-wordmark colored"></i>
+
+                            <i class="devicon-mongodb-plain-wordmark colored"></i>
+                        </div>
+                    </div>
+
+                    <h4>ABC Automotive</h4>
+                    <div class="row align-items-center justify-content-center bg-light py-5 position-relative">
+                        <div class="col-md-6 p-3">
+                            <img src="assets/images/abcAutomotive.png" class="position-relative w-100" alt="">
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <video class="position-relative w-100" src="assets/videos/abc_automotive.mp4" controls>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-md-6 text-center mt-3">
+
+                            <i class="devicon-csharp-plain colored"></i>
+                            <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="servicios">
+        <div class="container">
+            <div class="text-center">
+                <h2>Servicios</h2>
+                <div class="menu">
+                    <a data-type="software" class="active" href="javascript:void(0)">Software</a><a
+                        data-type="reparaciones" href="javascript:void(0)">Reparaciones</a><a
+                        href="javascript:void(0)">Consultas</a>
+                </div>
+            </div>
+
+            <div class="content software">
+                <div class="servicio row align-items-center">
+                    <div class="col-md-4">
+                        <img class="position-relative w-100" src="assets/images/hcjps.webp" alt="Desarrollo Web">
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            <h4>
+                                Diseño y Desarrollo Web
+                            </h4>
+
+                            <!-- Button trigger modal -->
+                            <button onclick="setEndorsmentType(event)" id="1" type="button" class="btn btn-info"
+                                data-bs-toggle="modal" data-bs-target="#modal"> Contacto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicio row align-items-center">
+                    <div class="col-md-4">
+                        <img class="position-relative w-100" src="assets/images/visual-studio.png" alt="Traducciones">
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            <h4>
+                                Desarrollo de aplicaciones windows
+                            </h4>
+
+                            <!-- Button trigger modal -->
+                            <button onclick="setEndorsmentType(event)" id="2" type="button" class="btn btn-info"
+                                data-bs-toggle="modal" data-bs-target="#modal">
+                                <i class="fa-solid fa-thumbs-up"></i> Endorsar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none content reparaciones">
+                <p>reparaciones</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="text-center">
+            <h2>Ubicación</h2>
+        </div>
+        <div class="mx-auto mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=calle%20mezquita%2024%20aguadulce&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://fmovies-online.net"></a><br>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 500px;
+                        width: 600px;
+                    }
+                </style><a href="https://www.embedgooglemap.net">inserting google maps</a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 500px;
+                        width: 600px;
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
+                <a href="javascript:void(0)" class="wa disabled"><i data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Disponible via solicitud" class="fa-brands fa-whatsapp-square"></i></a>
+            </div>
+            <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
+
+                <a href="https://www.linkedin.com/in/kevinwnb" target="_blank"><i
+                        class="in fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
+
+                <a href="https://www.facebook.com/kevin.wegener.3154" target="_blank"><i
+                        class="fb fa-brands fa-facebook-square"></i></a>
+            </div>
+            <div class="col-6 col-md-1 mt-5 mt-md-0 text-center">
+
+                <a href="https://github.com/kevinwnb" target="_blank"><i class="gh fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
