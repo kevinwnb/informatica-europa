@@ -1,37 +1,4 @@
-let projectToDeleteId;
 let endorsmentType
-
-// Enable Carousel Indicators
-$(".item").click(function () {
-    $("#demo").carousel(1);
-});
-
-let deleteProject = (projectId) => {
-    $.post("projectDelete.php",
-    {
-        id: projectId
-    },
-    function () {
-        location.reload();
-    });
-}
-
-
-
-$buildProjectCard = (img1Path, title, id) => {
-    return "\
-    <div class='card'>\
-    <img class='card-img-top' src='" + img1Path + "' alt='Card image'>\
-    <div class='card-body'>\
-    <h4 class='card-title'>" + title + "</h4>\
-    <!--<p class='card-text'><?php echo $p->get_description(); ?></p>-->\
-    <a href='#project" + id + "' class='btn btn-primary'>See Project</a>\
-    </div>\
-    </div>\
-    ";
-}
-
-
 
 function arrowAnimation() {
     $("a.scroll-down-arrow").animate({
@@ -55,6 +22,12 @@ document.querySelectorAll(".navbar .nav-link").forEach((link) => {
             scrollTop: $("section#" + event.target.id.substring(5)).offset().top - 70
         }, 0);
     });
+});
+
+document.querySelector("a.scroll-down-arrow").addEventListener("click", function(){
+    $("html").animate({
+        scrollTop: $("section#proyectos").offset().top - 70
+    }, 0);
 });
 
 
