@@ -126,6 +126,12 @@ section#servicios .servicio {
     padding: 50px;
 }
 
+section#servicios .description {
+    background-color: aqua;
+    position: relative;
+    bottom: 0;
+}
+
 .modal .msg h1 {
     color: darkgreen;
 }
