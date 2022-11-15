@@ -50,3 +50,7 @@ function updateForm() {
     else
         document.querySelector("section#message form button").classList.add("disabled")
 }
+
+function gResponse(token){
+    console.log(token)
+}
