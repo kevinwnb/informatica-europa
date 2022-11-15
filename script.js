@@ -30,14 +30,8 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 function sendMessage (event) {
-    event.preventDefault()
-    document.querySelector("section#message form").style.visibility = "hidden"
-    document.querySelector("section#message div.loading").style.display = "flex"
-    setTimeout(() => {
-        document.querySelector("section#message div.loading").style.display = "none"
-        document.querySelector("section#message div.sent").style.display = "flex"
-
-    }, 1500);
+    //event.preventDefault()
+    
 }
 
 function updateForm() {
@@ -49,4 +43,15 @@ function updateForm() {
         document.querySelector("section#message form button").classList.remove("disabled")
     else
         document.querySelector("section#message form button").classList.add("disabled")
+}
+
+function onSubmit(token){
+    document.getElementById("section#message form").submit();
+    document.querySelector("section#message form").style.visibility = "hidden"
+    document.querySelector("section#message div.loading").style.display = "flex"
+    setTimeout(() => {
+        document.querySelector("section#message div.loading").style.display = "none"
+        document.querySelector("section#message div.sent").style.display = "flex"
+
+    }, 1500);
 }
