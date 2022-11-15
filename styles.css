@@ -85,9 +85,37 @@ section#inicio .bg h4 {
 
 
 
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section#message div.pre-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 section#message form {
     max-width: 350px;
     margin: 0 auto;
+    width: 100%;
+}
+
+section#message div.loading {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: none;
+    margin: 0 auto;
+    border-top: 3px solid green;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    position: absolute;
 }
 
 section#message div.sent {
@@ -99,6 +127,7 @@ section#message div.sent {
     justify-content: center;
     font-size: 3rem;
     margin: 0 auto;
+    position: absolute;
 }
 
 

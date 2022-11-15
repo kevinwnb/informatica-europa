@@ -29,13 +29,13 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-function onSubmit(token) {
-    document.getElementById("section#message form").submit();
-}
-
 document.querySelector("section#message form button").addEventListener("click", function(event){
     event.preventDefault()
-    onSubmit()
-    document.querySelector("section#message form").style.display = "none"
-    document.querySelector("section#message div.sent").style.display = "flex"
+    document.querySelector("section#message form").style.visibility = "hidden"
+    document.querySelector("section#message div.loading").style.display = "flex"
+    setTimeout(() => {
+        document.querySelector("section#message div.loading").style.display = "none"
+        document.querySelector("section#message div.sent").style.display = "flex"
+        
+    }, 1500);
 })
