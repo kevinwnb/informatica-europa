@@ -50,7 +50,3 @@ function updateForm() {
     else
         document.querySelector("section#message form button").classList.add("disabled")
 }
-
-function onSubmit(token){
-    document.getElementById("section#message form").submit();
-}
