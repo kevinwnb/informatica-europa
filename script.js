@@ -1,4 +1,5 @@
 let endorsmentType
+let recaptcha_success = false
 
 function arrowAnimation() {
     $("a.scroll-down-arrow").animate({
@@ -31,6 +32,13 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 function sendMessage(event) {
     event.preventDefault()
+    if (recaptcha_success)
+        successMessage()
+    else
+        failMessage()
+}
+
+function successMessage(event) {
     document.querySelector("section#message form").style.visibility = "hidden"
     document.querySelector("section#message div.loading").style.display = "flex"
     setTimeout(() => {
@@ -41,7 +49,6 @@ function sendMessage(event) {
 }
 
 function failMessage(event) {
-    event.preventDefault()
     document.querySelector("section#message form").style.visibility = "hidden"
     document.querySelector("section#message div.loading").style.display = "flex"
     setTimeout(() => {
@@ -70,8 +77,8 @@ function gResponse(token) {
         .then(res => res.json())
         .then(data => {
             if (data.success)
-                sendMessage()
+                recaptcha_success = true
             else
-                failMessage()
+                recaptcha_success = false
         })
 }
