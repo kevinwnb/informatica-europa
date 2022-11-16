@@ -1,4 +1,5 @@
 let endorsmentType
+let recaptcha_done = false
 let recaptcha_success = false
 
 function arrowAnimation() {
@@ -63,7 +64,7 @@ function updateForm() {
     let phone = document.querySelector("section#message form #phone").value
     let msg = document.querySelector("section#message form #msg").value
 
-    if (name && phone && msg)
+    if (name && phone && msg && recaptcha_done)
         document.querySelector("section#message form button").classList.remove("disabled")
     else
         document.querySelector("section#message form button").classList.add("disabled")
@@ -76,11 +77,12 @@ function gResponse(token) {
     })
         .then(res => res.json())
         .then(data => {
+            if (Object.hasOwn(data, "success"))
+                recaptcha_done = true
+
             if (data.success)
                 recaptcha_success = true
             else
                 recaptcha_success = false
-
-            console.log(recaptcha_success)
         })
 }

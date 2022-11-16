@@ -35,4 +35,12 @@ function CallAPI($method, $url, $data = [])
     return $result;
 }
 
-echo json_encode(CallAPI("POST", "https://www.google.com/recaptcha/api/siteverify", ["secret" => "6LcX-AwjAAAAABxXB_0d3xi053dohFHxGAL2CvJ0", "response" => $json->token]));
+$result = json_decode(CallAPI("POST", "https://www.google.com/recaptcha/api/siteverify", ["secret" => "6LcX-AwjAAAAABxXB_0d3xi053dohFHxGAL2CvJ0", "response" => $json->token]));
+
+if($result->success == true){
+    echo json_encode(["success" => $result->success]);
+    exit;
+}
+else {
+    echo json_encode(["success"=>$result->success])
+}
