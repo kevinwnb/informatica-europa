@@ -77,7 +77,7 @@ function gResponse(token) {
     })
         .then(res => res.json())
         .then(data => {
-            if (Object.hasOwn(data, "success"))
+            if ("success" in data)
                 recaptcha_done = true
 
             if (data.success)
