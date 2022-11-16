@@ -40,6 +40,17 @@ function sendMessage(event) {
     }, 1500);
 }
 
+function failMessage(event) {
+    event.preventDefault()
+    document.querySelector("section#message form").style.visibility = "hidden"
+    document.querySelector("section#message div.loading").style.display = "flex"
+    setTimeout(() => {
+        document.querySelector("section#message div.loading").style.display = "none"
+        document.querySelector("section#message div.fail").style.display = "flex"
+
+    }, 1500);
+}
+
 function updateForm() {
     let name = document.querySelector("section#message form #name").value
     let phone = document.querySelector("section#message form #phone").value
@@ -56,6 +67,11 @@ function gResponse(token) {
         method: "POST",
         body: JSON.stringify({ token: token })
     })
-    .then(res => res.json())
-    .then(data => console.log(data))
+        .then(res => res.json())
+        .then(data => {
+            if (data.success)
+                sendMessage()
+            else
+                failMessage()
+        })
 }
