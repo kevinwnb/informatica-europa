@@ -80,5 +80,7 @@ function gResponse(token) {
                 recaptcha_success = true
             else
                 recaptcha_success = false
+
+            console.log(data)
         })
 }
