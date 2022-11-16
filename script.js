@@ -38,7 +38,7 @@ function sendMessage(event) {
         failMessage()
 }
 
-function successMessage(event) {
+function successMessage() {
     document.querySelector("section#message form").style.visibility = "hidden"
     document.querySelector("section#message div.loading").style.display = "flex"
     setTimeout(() => {
@@ -48,7 +48,7 @@ function successMessage(event) {
     }, 1500);
 }
 
-function failMessage(event) {
+function failMessage() {
     document.querySelector("section#message form").style.visibility = "hidden"
     document.querySelector("section#message div.loading").style.display = "flex"
     setTimeout(() => {
@@ -81,6 +81,6 @@ function gResponse(token) {
             else
                 recaptcha_success = false
 
-            console.log(data)
+            console.log(recaptcha_success)
         })
 }
