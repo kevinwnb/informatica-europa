@@ -93,3 +93,7 @@ function gResponse(token) {
                 recaptcha_success = false
         })
 }
+
+jQuery('section#message form #name').on('input propertychange paste', function() {
+    alert("d")
+});
