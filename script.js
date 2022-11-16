@@ -95,5 +95,13 @@ function gResponse(token) {
 }
 
 jQuery('section#message form #name').on('input propertychange paste', function() {
-    alert("d")
+    updateForm()
+});
+
+jQuery('section#message form #email').on('input propertychange paste', function() {
+    updateForm()
+});
+
+jQuery('section#message form #msg').on('input propertychange paste', function() {
+    updateForm()
 });
