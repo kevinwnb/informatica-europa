@@ -9,4 +9,4 @@ $message = $json->msg;
 $message = wordwrap($message, 70, "\r\n");
 
 // Send
-mail('info@kevinwnb.com', 'Mensaje', $json->name . " | " . $json->phone . " | " . $json->msg);
+mail('info@kevinwnb.com', 'Mensaje', $json->name . " | " . $json->email . " | " . $json->msg);
