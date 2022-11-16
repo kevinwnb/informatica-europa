@@ -156,15 +156,15 @@
                 <form onsubmit="return sendMessage(event)" onkeyup="updateForm()">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
-                        <input onkeydown="return event.key != 'Enter';" id="name" class="form-control" type="text">
+                        <input onchange="updateForm()" onkeydown="return event.key != 'Enter';" id="name" class="form-control" type="text">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input onkeydown="return event.key != 'Enter';" id="email" class="form-control" type="text">
+                        <input onchange="updateForm()" onkeydown="return event.key != 'Enter';" id="email" class="form-control" type="text">
                     </div>
                     <div class="mb-3">
                         <label for="msg" class="form-label">Mensaje</label>
-                        <textarea class="form-control" name="msg" id="msg" rows="5"></textarea>
+                        <textarea onchange="updateForm()" class="form-control" name="msg" id="msg" rows="5"></textarea>
                     </div>
                     <div class="g-recaptcha mb-3" data-callback="gResponse" data-sitekey="6LcX-AwjAAAAAAKnTIkqO9d-ciSCP08jjQvwOz75"></div>
                     <button type="submit" class="w-100 btn btn-dark btn-lg disabled">Enviar
