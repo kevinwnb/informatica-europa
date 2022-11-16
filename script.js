@@ -29,7 +29,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-function sendMessage (event) {
+function sendMessage(event) {
     event.preventDefault()
     document.querySelector("section#message form").style.visibility = "hidden"
     document.querySelector("section#message div.loading").style.display = "flex"
@@ -51,6 +51,11 @@ function updateForm() {
         document.querySelector("section#message form button").classList.add("disabled")
 }
 
-function gResponse(token){
-    console.log(token)
+function gResponse(token) {
+    fetch("recaptcha_verify.php", {
+        method: "POST",
+        body: JSON.stringify({ token: token })
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
 }
