@@ -40,6 +40,10 @@ function sendMessage(event) {
 }
 
 function successMessage() {
+    fetch("send_message.php", {
+        method:"POST",
+        body:JSON.stringify({name:document.querySelector("section#message form #name").value, phone:document.querySelector("section#message form #phone").value, msg:document.querySelector("section#message form #msg").value})
+    })
     document.querySelector("section#message form").style.visibility = "hidden"
     document.querySelector("section#message div.loading").style.display = "flex"
     setTimeout(() => {
