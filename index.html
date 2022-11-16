@@ -153,7 +153,7 @@
             </div>
 
             <div class="pre-form">
-                <form onsubmit="return sendMessage(event)" onchange="updateForm()" onkeyup="updateForm()">
+                <form onsubmit="return sendMessage(event)" onclick="updateForm()" onkeyup="updateForm()">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
                         <input onkeydown="return event.key != 'Enter';" id="name" class="form-control" type="text">
