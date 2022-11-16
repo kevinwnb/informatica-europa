@@ -66,10 +66,10 @@ function failMessage() {
 
 function updateForm() {
     let name = document.querySelector("section#message form #name").value
-    let phone = document.querySelector("section#message form #phone").value
+    let email = document.querySelector("section#message form #email").value
     let msg = document.querySelector("section#message form #msg").value
 
-    if (name && phone && msg && recaptcha_done)
+    if (name && email && msg && recaptcha_done)
         document.querySelector("section#message form button").classList.remove("disabled")
     else
         document.querySelector("section#message form button").classList.add("disabled")
