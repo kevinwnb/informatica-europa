@@ -42,5 +42,5 @@ if($result->success == true){
     exit;
 }
 else {
-    echo json_encode(["success"=>$result->success])
+    echo json_encode(["success"=>$result->success]);
 }
