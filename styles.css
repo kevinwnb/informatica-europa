@@ -73,8 +73,10 @@ section#inicio .bg > div {
 }
 
 section#inicio .bg h2 {
-    color: white;
+    color: #01588d;
+    border: 2px solid white;
     letter-spacing: 0.5rem;
+    background-color: white;
     border: 0px !important;
     margin: 0;
     padding: 0;
