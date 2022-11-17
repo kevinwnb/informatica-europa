@@ -42,8 +42,9 @@ section:not(#inicio) {
 }
 
 section h2 {
-    border: 2px solid #4d4d4d;
-    color: #4d4d4d;
+    border: 2px solid #01588d;
+    color: #fff;
+    background-color: #01588d;
     border-radius: 10px;
     display: inline-block;
     padding: 7px;
