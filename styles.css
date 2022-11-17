@@ -78,6 +78,7 @@ section#inicio .bg h2 {
     border: 0px !important;
     margin: 0;
     padding: 0;
+    background-color: transparent;
 }
 
 section#inicio .bg h4 {
