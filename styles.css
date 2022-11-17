@@ -73,10 +73,8 @@ section#inicio .bg > div {
 }
 
 section#inicio .bg h2 {
-    color: #01588d;
-    border: 2px solid white;
+    color: white;
     letter-spacing: 0.5rem;
-    background-color: white;
     border: 0px !important;
     margin: 0;
     padding: 0;
@@ -153,8 +151,9 @@ section#servicios {
 }
 
 section#servicios h2 {
-    color: lightyellow;
-    border-color: lightyellow;
+    color: #01588d;
+    border-color: white;
+    background-color: white;
 }
 
 section#servicios .menu {
