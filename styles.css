@@ -227,6 +227,10 @@ footer a i {
     transition: color 0.25s;
 }
 
+footer a#phone_number:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 768px) {
   
 }
