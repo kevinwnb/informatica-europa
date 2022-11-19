@@ -33,6 +33,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 function sendMessage(event) {
     event.preventDefault()
+    recaptcha_success = false
     if (recaptcha_success)
         fetch("send_message.php", {
             method: "POST",
