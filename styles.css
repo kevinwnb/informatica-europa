@@ -240,6 +240,8 @@ footer .fa-whatsapp {
     font-size: 2rem;
     color: white;
     background-color: limegreen;
+    padding: 5px;
+    border-radius: 7px;
 }
 
 @media only screen and (min-width: 768px) {
